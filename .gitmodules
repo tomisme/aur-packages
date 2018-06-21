@@ -1,0 +1,3 @@
+[submodule "stout-bin"]
+	path = stout-bin
+	url = https://github.com/tomisme/stout-bin-aur
