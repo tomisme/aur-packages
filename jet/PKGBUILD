@@ -15,13 +15,5 @@ source=("https://github.com/borkdude/jet/releases/download/v${pkgver}/jet-${pkgv
 md5sums=('a982ff67199ebd95865e2d8dcb838a85')
 
 package() {
-				cd "$srcdir"
-				mv stout-linux stout
-				chmod +x stout
-				mkdir -p "$pkgdir/usr/bin"
-				cp stout "$pkgdir/usr/bin"
-}
-
-package() {
   install -Dm755 "${srcdir}/jet" "${pkgdir}/usr/bin/jet"
 }
